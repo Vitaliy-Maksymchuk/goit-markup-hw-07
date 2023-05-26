@@ -151,7 +151,7 @@
             <div class="container">
                 <h2 class="header-section">Our Team</h2>
 
-                <!-- --------------- TEAM LIST --------------- -->
+                <!-- ,,,,,,,,,,,,,,, TEAM LIST ,,,,,,,,,,,,,,, -->
                 <ul class="list team">
 
                     <!-- ............... FIRST MEMBER ............... -->
@@ -428,13 +428,10 @@
                     <label class="subscribe-label">
                         <input type="email" placeholder="E-mail" name="email" class="subscribe-input-place">
                     </label>
-                    <button type="submit" class="subscribe-btn social-media-text"><span
-                            class="subscribe-btn-text">Subscribe</span>
-                        <div class="subscribe-btn-icon">
-                            <svg class="subscribe-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </div>
+                    <button type="submit" class="subscribe-btn social-media-text">Subscribe<svg class="subscribe-icon"
+                            width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
                     </button>
                 </form>
             </div>
@@ -450,9 +447,8 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-
+            <p class="service-form-title">Leave your contacts and we will call you back</p>
             <form class="service-form">
-                <p class="service-form-title">Leave your contacts and we will call you back</p>
                 <label class="service-form-field-wrapper"><span class="service-form-field-descr">Name</span>
                     <span class="service-form-input-wrapper">
                         <input class="service-form-input" type="text" name="user_name" required pattern="[a-zA-Z']+">
@@ -462,9 +458,8 @@
                     </span>
                 </label>
                 <label class="service-form-field-wrapper"><span class="service-form-field-descr">Phone</span>
-                    <span class="service-form-input-wrapper"><input class="service-form-input" type="phone"
-                            name="user_tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                            title="xxx-xxx-xx-xx">
+                    <span class="service-form-input-wrapper"><input class="service-form-input" type="tel"
+                            name="user_tel" required>
                         <svg class="service-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -479,7 +474,9 @@
                     </span>
                 </label>
                 <label class="service-form-field-wrapper"><span class="service-form-field-descr">Comment</span>
-                    <textarea class="service-form-comment" name="user_comment" placeholder="Text input"></textarea>
+                    <span class="service-form-comment-wrapper">
+                        <textarea class="service-form-comment" name="user_comment" placeholder="Text input"></textarea>
+                    </span>
                 </label>
                 <label class="service-form-checkbox-wrapper">
                     <input class="service-form-checkbox" type="checkbox" name="user_policy" required>
@@ -488,7 +485,7 @@
                         </use>
                     </svg>I accept the terms and conditions of the <a href="" class="policy-link">Privacy Policy</a>
                 </label>
-                <button type="submit" class="service-form-submit">Send</button>
+                <button type="submit" class="service-form-submit-btn">Send</button>
             </form>
         </div>
     </div>

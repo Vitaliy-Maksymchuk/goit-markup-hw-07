@@ -516,7 +516,7 @@ body {
     display: flex;
 }
 
-/* --------------- SUBSCRIBE BTN --------------- */
+/* ,,,,,,,,,,,,,,, SUBSCRIBE BTN ,,,,,,,,,,,,,,, */
 .subscribe-btn {
     align-items: center;
     height: 40px;
@@ -529,10 +529,9 @@ body {
     display: flex;
     box-sizing: inherit;
     padding: 8px 24px;
-}
-
-.subscribe-btn-text {
-    display: block;
+    gap: 16px;
+    letter-spacing: 0.04em;
+    justify-content: center;
 }
 
 .subscribe-btn-icon {
@@ -546,7 +545,7 @@ body {
     transition: var(--transition-properties);
 }
 
-/* --------------------------------------------- */
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
 
 .subscribe-icon {
@@ -831,7 +830,14 @@ body {
 .service-form-input-wrapper {
     position: relative;
     display: block;
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition: var(--transition-properties);
+}
+
+.service-form-comment-wrapper {
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .service-form-comment {
@@ -868,7 +874,7 @@ body {
     color: #8E8F99;
 }
 
-.service-form-submit {
+.service-form-submit-btn {
     padding: 16px 32px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
