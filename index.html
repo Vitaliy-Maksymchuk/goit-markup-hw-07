@@ -428,8 +428,8 @@
                     <label class="subscribe-label">
                         <input type="email" placeholder="E-mail" name="email" class="subscribe-input-place">
                     </label>
-                    <button type="submit" class="subscribe-btn social-media-text">Subscribe<svg class="subscribe-icon"
-                            width="24" height="24">
+                    <button type="submit" class="subscribe-btn social-media-text">Subscribe<svg
+                            class="subscribe-btn-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
@@ -442,49 +442,82 @@
     <!-- ############### BACKDROP ############### -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+
+            <!-- =============== MODAL CLOSE BUTTON =============== -->
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <p class="service-form-title">Leave your contacts and we will call you back</p>
+
+            <!-- =============== FORM =============== -->
             <form class="service-form">
-                <label class="service-form-field-wrapper"><span class="service-form-field-descr">Name</span>
-                    <span class="service-form-input-wrapper">
-                        <input class="service-form-input" type="text" name="user_name" required pattern="[a-zA-Z']+">
-                        <svg class="service-input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-person"></use>
-                        </svg>
-                    </span>
-                </label>
-                <label class="service-form-field-wrapper"><span class="service-form-field-descr">Phone</span>
-                    <span class="service-form-input-wrapper"><input class="service-form-input" type="tel"
-                            name="user_tel" required>
-                        <svg class="service-input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                    </span>
-                </label>
-                <label class="service-form-field-wrapper"><span class="service-form-field-descr">Email</span>
-                    <span class="service-form-input-wrapper">
-                        <input class="service-form-input" type="email" name="user_email" required>
-                        <svg class="service-input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-email"></use>
-                        </svg>
-                    </span>
-                </label>
-                <label class="service-form-field-wrapper"><span class="service-form-field-descr">Comment</span>
-                    <span class="service-form-comment-wrapper">
-                        <textarea class="service-form-comment" name="user_comment" placeholder="Text input"></textarea>
-                    </span>
-                </label>
-                <label class="service-form-checkbox-wrapper">
-                    <input class="service-form-checkbox" type="checkbox" name="user_policy" required>
-                    <svg class="service-form-checkbox-icon" width="16" height="16">
-                        <use class="service-form-checkbox-icon-checkmark" href="./images/icons.svg#icon-checkmark">
-                        </use>
-                    </svg>I accept the terms and conditions of the <a href="" class="policy-link">Privacy Policy</a>
-                </label>
+
+                <!-- ~~~~~~~~~~~~~~~ NAME INPUT ~~~~~~~~~~~~~~~ -->
+                <div class="service-form-wrapper">
+                    <label class="service-form-field-wrapper" for="user-name">Name<div
+                            class="service-form-input-wrapper">
+                            <input class="service-form-input" type="text" name="user_name" id="user-name" required
+                                pattern="[a-zA-Z']+">
+                            <svg class="service-input-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~ PHONE INPUT ~~~~~~~~~~~~~~~ -->
+                <div class="service-form-wrapper">
+                    <label class="service-form-field-wrapper">Phone<div class="service-form-input-wrapper"><input
+                                class="service-form-input" type="tel" name="user_tel" id="user-tel" required>
+                            <svg class="service-input-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~ E-MAIL INPUT ~~~~~~~~~~~~~~~ -->
+                <div class="service-form-wrapper">
+                    <label class="service-form-field-wrapper">Email
+                        <div class="service-form-input-wrapper">
+                            <input class="service-form-input" type="email" name="user_email" id="user-email" required>
+                            <svg class="service-input-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~ COMMENTS INPUT ~~~~~~~~~~~~~~~ -->
+                <div class="service-form-main-wrapper">
+                    <label class="service-form-field-wrapper">Comment
+                        <div class="service-form-comment-wrapper">
+                            <textarea class="service-form-comment" name="user_comment" placeholder="Text input"
+                                id="user-comment"></textarea>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~ CHECKBOX ~~~~~~~~~~~~~~~ -->
+                <div class="service-form-checkbox-main-wrapper">
+                    <input class="service-form-checkbox" type="checkbox" name="user_policy" id="user-privacy"
+                        value="true" visually-hidden required>
+                    <label class="service-form-checkbox-wrapper" for="user-privacy">
+                        <span class="service-form-checkbox-policy">
+                            <svg class="service-form-checkbox-icon" width="10" height="8">
+                                <use class="service-form-checkbox-icon-checkmark"
+                                    href="./images/icons.svg#icon-checkmark">
+                                </use>
+                            </svg>I accept the terms and conditions of the <a href="" class="policy-link">Privacy
+                                Policy</a>
+                        </span>
+
+                    </label>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~ SERVICE SUBMIT BUTTON ~~~~~~~~~~~~~~~ -->
                 <button type="submit" class="service-form-submit-btn">Send</button>
             </form>
         </div>

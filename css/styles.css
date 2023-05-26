@@ -516,42 +516,6 @@ body {
     display: flex;
 }
 
-/* ,,,,,,,,,,,,,,, SUBSCRIBE BTN ,,,,,,,,,,,,,,, */
-.subscribe-btn {
-    align-items: center;
-    height: 40px;
-    min-width: 165px;
-    background-color: var(--logo-web-color);
-    border-radius: 4px;
-    border: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    box-sizing: inherit;
-    padding: 8px 24px;
-    gap: 16px;
-    letter-spacing: 0.04em;
-    justify-content: center;
-}
-
-.subscribe-btn-icon {
-    margin-left: 16px;
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: var(--transition-properties);
-}
-
-/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
-
-
-.subscribe-icon {
-    display: block;
-}
-
 .subscribe-input-place {
     font-style: normal;
     font-weight: 400;
@@ -567,6 +531,8 @@ body {
     border-radius: 4px;
     padding: 8px 16px;
     outline: none;
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-input-place::placeholder {
@@ -584,6 +550,38 @@ body {
     margin-right: 24px;
 }
 
+
+/* ~~~~~~~~~~~~~~~ SUBSCRIBE BTN ~~~~~~~~~~~~~~~ */
+.subscribe-btn {
+    align-items: center;
+    height: 40px;
+    min-width: 165px;
+    background-color: var(--logo-web-color);
+    border-radius: 4px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: inherit;
+    padding: 8px 24px;
+    gap: 16px;
+    letter-spacing: 0.04em;
+    justify-content: center;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: var(--transition-properties);
+}
+
+.subscribe-icon {
+    display: block;
+    margin-left: 16px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ============================================= */
 /* ############################################# */
 
@@ -764,9 +762,23 @@ body {
 
 
 /* =============== FORM =============== */
+.service-form-wrapper {
+    margin-bottom: 8px;
+}
+
+.service-form-main-wrapper {
+    margin-bottom: 16px;
+}
+
 .service-form-field-wrapper {
     display: block;
-    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 4px;
 }
 
 .service-form-checkbox-wrapper {
@@ -778,15 +790,17 @@ body {
 .service-form-input {
     width: 100%;
     height: 40px;
-    border: 1px solid #8E8F99;
+    border: 1px solid rgba(46, 47, 66, 0.2);
     border-radius: 4px;
-    padding: 11px 11px 11px 38px;
+    padding-left: 38px;
+    background-color: transparent;
+    outline: transparent;
 }
 
 .service-form-input:focus {
     outline: none;
     border-color: var(--logo-web-color);
-    transition: var(--transition-properties);
+    transition: border-color var(--transition-properties);
 }
 
 .service-form-title {
@@ -801,17 +815,6 @@ body {
     color: var(--dark-theme-section-background-color);
 }
 
-.service-form-field-descr {
-    display: block;
-    margin-bottom: 4px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.6;
-    letter-spacing: 0.01em;
-    color: #8E8F99;
-}
-
 .service-input-icon {
     position: absolute;
     top: 50%;
@@ -824,7 +827,7 @@ body {
 
 .service-form-input:focus+.service-input-icon {
     fill: var(--logo-web-color);
-    transition: var(--transition-properties);
+    transition: fill var(--transition-properties);
 }
 
 .service-form-input-wrapper {
@@ -843,6 +846,13 @@ body {
 .service-form-comment {
     width: 100%;
     height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.2);
+    background-color: transparent;
+    outline: transparent;
     resize: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -853,23 +863,24 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
 }
 
 .service-form-comment:focus {
-    outline: none;
     border-color: var(--logo-web-color);
-    transition: var(--transition-properties);
+    transition: border-color var(--transition-properties);
+}
+
+.service-form-checkbox-main-wrapper {
+    margin-bottom: 24px;
+
 }
 
 .service-form-checkbox-wrapper {
-    margin-bottom: 24px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
 }
@@ -894,8 +905,8 @@ body {
     transition: var(--transition-properties);
 }
 
-.service-form-submit:focus,
-.service-form-submit:hover {
+.service-form-submit-btn:focus,
+.service-form-submit-btn:hover {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     transition: var(--transition-properties);
@@ -906,14 +917,17 @@ body {
 }
 
 .service-form-checkbox {
-    appearance: none;
     position: absolute;
 }
 
-.service-form-checkbox-icon {
-    border-radius: 4px;
-    padding: 2px;
-    border: 1px solid #8E8F99;
+.service-form-checkbox-policy {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    fill: transparent;
+    border: 1px solid #2e2f42;
     cursor: pointer;
 }
 
