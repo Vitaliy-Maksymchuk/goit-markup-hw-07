@@ -762,18 +762,12 @@ body {
 
 
 /* =============== FORM =============== */
-.service-form-wrapper {
+.service-wrapper {
     margin-bottom: 8px;
-}
-
-.service-form-main-wrapper {
-    margin-bottom: 16px;
 }
 
 .service-form-field-wrapper {
     display: block;
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -781,10 +775,8 @@ body {
     margin-bottom: 4px;
 }
 
-.service-form-checkbox-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.service-form-input-wrapper {
+    position: relative;
 }
 
 .service-form-input {
@@ -795,52 +787,27 @@ body {
     padding-left: 38px;
     background-color: transparent;
     outline: transparent;
-}
-
-.service-form-input:focus {
-    outline: none;
-    border-color: var(--logo-web-color);
     transition: border-color var(--transition-properties);
 }
 
-.service-form-title {
-    display: block;
-    margin-bottom: 16px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--dark-theme-section-background-color);
+.service-form-input:focus {
+    border-color: var(--logo-web-color);
 }
 
 .service-input-icon {
     position: absolute;
+    left: 16px;
     top: 50%;
     transform: translatey(-50%);
-    left: 16px;
-    display: block;
-    width: 18px;
-    height: 24px;
+    transition: fill var(--transition-properties);
 }
 
 .service-form-input:focus+.service-input-icon {
     fill: var(--logo-web-color);
-    transition: fill var(--transition-properties);
 }
 
-.service-form-input-wrapper {
-    position: relative;
-    display: block;
-    background-color: transparent;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    transition: var(--transition-properties);
-}
-
-.service-form-comment-wrapper {
-    background-color: transparent;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+.service-form-main-wrapper {
+    margin-bottom: 16px;
 }
 
 .service-form-comment {
@@ -856,7 +823,70 @@ body {
     resize: none;
     padding: 8px 16px;
     border-radius: 4px;
-    border-color: #8E8F99;
+    transition: border-color var(--transition-properties);
+}
+
+.service-form-comment:focus {
+    border-color: var(--logo-web-color);
+}
+
+.service-form-checkbox-main-wrapper {
+    margin-bottom: 24px;
+}
+
+.service-form-checkbox {
+    visibility: hidden;
+}
+
+.service-form-checkbox-wrapper {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.service-form-checkbox-policy {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--menu-link-color);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    fill: transparent;
+}
+
+
+
+
+
+
+
+.service-form-checkbox:focus+.service-form-checkbox-wrapper>.service-form-checkbox-icon {
+    background-color: var(--accent-color);
+    border: none;
+    fill: #FFFFFF;
+    border-color: var(--accent-color);
+}
+
+.service-form-checkbox:checked+.service-form-checkbox-icon>.service-form-checkbox-icon-checkmark {
+    opacity: 1;
+}
+
+
+
+
+
+
+.service-form-title {
+    display: block;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--dark-theme-section-background-color);
 }
 
 .service-form-comment::placeholder {
@@ -866,23 +896,6 @@ body {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-}
-
-.service-form-comment:focus {
-    border-color: var(--logo-web-color);
-    transition: border-color var(--transition-properties);
-}
-
-.service-form-checkbox-main-wrapper {
-    margin-bottom: 24px;
-
-}
-
-.service-form-checkbox-wrapper {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
 }
 
 .service-form-submit-btn {
@@ -914,34 +927,6 @@ body {
 
 .policy-link {
     color: var(--logo-web-color);
-}
-
-.service-form-checkbox {
-    position: absolute;
-}
-
-.service-form-checkbox-policy {
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    display: inline-flex;
-    align-items: center;
-    fill: transparent;
-    border: 1px solid #2e2f42;
-    cursor: pointer;
-}
-
-.service-form-checkbox-icon-checkmark {
-    opacity: 0;
-}
-
-.service-form-checkbox:focus+.service-form-checkbox-icon {
-    border-color: var(--logo-web-color);
-    transition: var(--transition-properties);
-}
-
-.service-form-checkbox:checked+.service-form-checkbox-icon>.service-form-checkbox-icon-checkmark {
-    opacity: 1;
 }
 
 /* ============================================= */
