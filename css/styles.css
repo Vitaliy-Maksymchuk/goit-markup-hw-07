@@ -576,8 +576,7 @@ body {
     transition: var(--transition-properties);
 }
 
-.subscribe-icon {
-    display: block;
+.subscribe-btn-icon {
     margin-left: 16px;
 }
 
