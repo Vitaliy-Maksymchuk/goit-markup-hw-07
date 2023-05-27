@@ -858,7 +858,7 @@ body {
     margin-bottom: 24px;
 }
 
-.service-form-checkbox {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
