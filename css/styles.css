@@ -887,7 +887,7 @@ body {
     color: var(--logo-web-color);
 }
 
-.service-form-checkbox:checked+.service-form-checkbox-wrapper>.service-form-checkbox-policy>.service-form-checkbox-icon {
+.service-form-checkbox:checked+.service-form-checkbox-wrapper>.service-form-checkbox-policy {
     background-color: var(--accent-color);
     border: none;
     fill: #FFFFFF;
