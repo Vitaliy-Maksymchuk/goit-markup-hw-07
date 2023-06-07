@@ -313,6 +313,11 @@ body {
         display: flex;
         max-width: 328px;
     }
+
+    .mobile-social-list-icon {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 /* ============================================= */
